@@ -1,0 +1,107 @@
+<html>
+<head>
+  <title>Investment Advice</title>
+  <link href='https://fonts.googleapis.com/css?family=Muli' rel='stylesheet' type='text/css'>
+  <link rel="stylesheet" type="text/css" href="css/main.css">
+</head>
+<body>
+  <div class="slides">
+	  
+    <div class="visible">
+      <p>Questions 1/7</p>
+      <h3>What are you looking for in a financial advisor?</h3>
+      <p id="question1">Select all that apply:
+        <br/>
+        <input class="squaredTwo" type="checkbox" name="service" value="investment" /> I'd like to create a diversified investment portfolio
+        <br/>
+        <input type="checkbox" name="service"value="taxes" /> I'd like to save money on my taxes
+        <br/>
+        <input type="checkbox" name="service" value="manage" /> I'd like someone to completely manage my investments, so that I don't have to
+        <br/>
+        <input type="checkbox" name="service"value="growth" /> I'd like to match or beat the performance of the markets
+      </p>
+    </div>
+	  
+    <div>
+      <p>Questions 2/7</p>
+      <h3>What is your current age?</h3>
+      <p id="question2">
+        <label>Age: <input type="text" name="age" /> years</label>
+      </p>
+    </div>
+	  
+    <div>
+      <p>Questions 3/7</p>
+      <h3>What is your annual after-tax income?</h3>
+      <p id="question3">
+        <label>$ <input type="text" name="income" /></label>
+      </p>
+    </div>
+
+     <div>
+      <p>Questions 4/7</p>
+      <h3>Which of the following best describes your household?</h3>
+      <p id="question4">Choose one:
+        <br/>
+        <input type="radio" name="household" value="single-nodep" checked="checked" /> Single income, no dependents
+        <br/>
+        <input type="radio" name="household" value="single-onedep" /> Single income, at least one dependent
+        <br/>
+        <input type="radio" name="household" value="dual-nodep" /> Dual income, no dependents
+        <br/>
+        <input type="radio" name="household"value="dual-onedep" /> Dual income, at least one dependent
+        <br/>
+        <input type="radio" name="household"value="retired" /> Retired or financially independent
+      </p>
+    </div>
+
+    <div>
+      <p>Questions 5/7</p>
+      <h3>What is the total value of your cash and liquid investments?</h3>
+      <p>e.g. savings, CDs, mutual funds, IRAs, 401(k)s, public stocks</p>
+      <p id="question5">  
+        <label>$ <input type="text" name="investments" /></label>
+      </p>
+    </div>
+
+     <div>
+      <p>Questions 6/7</p>
+      <h3>When deciding how to invest your money, which do you care about more?</h3>
+      <p id="question6">Choose one:
+        <br/>
+        <input type="radio" name="invest" value="max-gain" checked="checked" /> Maximizing gains
+        <br/>
+        <input type="radio" name="invest" value="min-loss" /> Minimizing losses
+        <br/>
+        <input type="radio" name="invest" value="both-equally" /> Both equally
+      </p>
+    </div>
+
+    <div>
+      <p>Questions 7/7</p>
+      <h3>The global stock market is often volatile. If your entire investment portfolio lost 10% of its value in a month during a market decline, what would you do?</h3>
+      <p id="question7">Choose one:
+        <br/>
+        <input type="radio" name="decline" value="sell-all" checked="checked" /> Sell all of your investments
+        <br/>
+        <input type="radio" name="decline" value="sell-some" /> Sell some
+        <br/>
+        <input type="radio" name="decline" value="keep-all" /> Keep all
+        <br/>
+        <input type="radio" name="decline" value="buy-more" /> Buy more
+      </p>
+    </div>
+
+    <div id="final_result">
+      <p>Result</p>
+      <!-- <h3>Based of your inputs, here's how we think you should invest:</h3> -->
+      <h3>Here are your responses:</h3>
+      <button id="resultButton">Show me the result</button>
+    </div>
+  
+  </div>
+  <button id="backButton">Back</button>
+  <button id="nextButton">Next</button>
+  <script type="text/javascript" src="js/app.js"></script>
+</body>
+</html>
