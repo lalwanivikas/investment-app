@@ -3,14 +3,20 @@ body {
 	background-image: url("../images/bg.png");
 	color: #fff;
 	letter-spacing: 0.8px;
+  width: 650px;
+  margin: 50px auto;
 }
 
 p {
-	font-size: 18px;
+	font-size: 1.2em;
 }
 
 h3 {
-	font-size: 22px;
+	font-size: 1.8em;
+}
+
+*:focus {
+    outline: 0;
 }
 
 #final_result h3{
@@ -19,16 +25,13 @@ h3 {
 
 .slides div {
 	display: none;
-	height: 275px;
+	height: 400px;
 }
 
 div .visible {
 	display: block;
 }
 
-*:focus {
-    outline: 0;
-}
 
 /* custom button styling */
 button {
@@ -81,5 +84,3 @@ input[type="text"] {
 input[type="text"]:focus {
   background: #fff
 }
-
-
